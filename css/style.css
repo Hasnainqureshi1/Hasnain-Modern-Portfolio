@@ -598,6 +598,7 @@ font-weight: 600;
  
 .portfolio .container{
     padding-bottom: 40px;
+    position: relative;
 }
 .portfolio .portfolio_heading{
     flex: 0 0 100%;
@@ -733,6 +734,36 @@ height:140px;
     transition: all 0.3s ease;
     border:none;
 }
+#projectModal{
+    position: absolute;
+    
+     width: calc(100%  );
+    /* height: 80%; */
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    display: none;
+    background-color: var(--bg-black-100);
+}
+#videoContainer{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 0;
+}
+#videoContainer video{
+    width: 100%;
+    height: 100%;
+    
+}
+.close-modal{
+    color: var(--text-black-900);
+    font-size: 26px;
+    margin-left: 20px;
+    cursor: pointer;
+}
 
 /* css for smart devices  */
 
@@ -780,6 +811,7 @@ max-width: 50%;
     flex:  0 0 50%;
     max-width:  50%;
     margin-bottom: 30px;
+    position: relative;
 } 
 .portfolio .container {
     padding-bottom: 0px;
